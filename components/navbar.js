@@ -31,17 +31,7 @@ export default function Navbar(props) {
       label: "Archive",
       href: "/archive"
     },
-    {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
-    },
-    {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
-    }
+   
   ];
 
   const mobilemenu = [...leftmenu, ...rightmenu];
@@ -109,7 +99,7 @@ export default function Navbar(props) {
                     className="ml-auto rounded-md px-2 py-1 text-gray-500 focus:text-blue-500 focus:outline-none dark:text-gray-300 md:hidden ">
                     <svg
                       className="h-6 w-6 fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns=""
                       viewBox="0 0 24 24">
                       {open && (
                         <path

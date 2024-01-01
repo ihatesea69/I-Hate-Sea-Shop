@@ -22,7 +22,7 @@ const SkeletonImg = () => {
   `;
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns=""
       role="img"
       id="skeleton"
       aria-labelledby="loading-aria"
