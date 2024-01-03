@@ -7,10 +7,10 @@ export default function About({ authors, settings }) {
   return (
     <Container>
       <h1 className="text-brand-primary mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
-        About
+       Hieu Nghi Shop
       </h1>
       <div className="text-center">
-        <p className="text-lg">We are a small passionate team.</p>
+        <p className="text-lg">Đem  bạn ra thế giới</p>
       </div>
 
       <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
@@ -38,18 +38,10 @@ export default function About({ authors, settings }) {
 
       <div className="prose mx-auto mt-14 text-center dark:prose-invert">
         <p>
-          We provide real-time connectivity to enable software
-          providers and financial institutions to build integrated
-          products for their small business customers.
-        </p>
+       " Việc đưa doanh nghiệp ra thế giới internet là một bước quan trọng để mở rộng quy mô kinh doanh và kết nối toàn cầu. Internet không chỉ giúp tiếp cận khách hàng ở mọi nơi mà còn tối ưu hóa quy trình kinh doanh, giảm chi phí, và tạo ra các cơ hội tiếp thị mới. Tuy nhiên, để thành công, doanh nghiệp cần duy trì uy tín trực tuyến và tận dụng các công nghệ và kênh tiếp thị hiện đại. "  </p> 
+      
         <p>
-          Our API infrastructure is leveraged by clients ranging from
-          lenders to corporate card providers and business forecasting
-          tools, with use cases including automatic reconciliation,
-          business dashboarding, and loan decisioning.
-        </p>
-        <p>
-          <Link href="/contact">Get in touch</Link>
+          <Link href="/contact">Liên hệ với chúng tôi ngay</Link>
         </p>
       </div>
     </Container>

@@ -28,7 +28,7 @@ export default async function Post({ searchParams }) {
       {posts && posts?.length === 0 && (
         <div className="flex h-40 items-center justify-center">
           <span className="text-lg text-gray-500">
-            End of the result!
+            Hết mẫu rồi @@
           </span>
         </div>
       )}

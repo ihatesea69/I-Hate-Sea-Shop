@@ -24,7 +24,7 @@ export default function Contact({ settings }) {
   const [isSuccess, setIsSuccess] = useState(false);
   const [message, setMessage] = useState(false);
   // Please update the Access Key in the Sanity CMS - Site Congig Page
-  const apiKey = settings?.w3ckey || "YOUR_ACCESS_KEY_HERE";
+  const apiKey = settings?.w3ckey || "skKY317wGbRcnqZiji80yMUC5AIsPU5RiO6ws41BJq9QOZBEVHuUWaFakDj89HPENblvj3RiqaJQz19zUGU71Z4VgXcl6fwe2n9UfUwE3B0rz1MeXPvGTT6z1WpvFB3uKM9mhwlNSi9OqaTdrc2Lz2MNCKHcmTysJFuzwuIXag9YVBqOunSv";
 
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
@@ -49,23 +49,24 @@ export default function Contact({ settings }) {
         Contact
       </h1>
       <div className="text-center">
-        <p className="text-lg">We are a here to help.</p>
+        <p className="text-lg">Cần liên hệ gì với chúng tôi sao ?</p>
       </div>
 
       <div className="grid my-10 md:grid-cols-2">
         <div className="my-10">
           <h2 className="text-2xl font-semibold dark:text-white">
-            Contact Stablo
+            Liên Hệ Hieu Nghi Shop
           </h2>
           <p className="max-w-sm mt-5">
-            Have something to say? We are here to help. Fill up the
-            form or send email or call phone.
+          speedcompanyhelp@gmail.com
           </p>
+        
+          <a href = "https://www.facebook.com/hieunghisolution/"> Facebook</a> 
 
           <div className="mt-5">
             <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
               <MapPinIcon className="w-4 h-4" />
-              <span>1734 Sanfransico, CA 93063</span>
+              <span>Thành Phố Hồ Chí Minh</span>
             </div>
             {settings?.email && (
               <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
@@ -95,7 +96,7 @@ export default function Contact({ settings }) {
             <div className="mb-5">
               <input
                 type="text"
-                placeholder="Full Name"
+                placeholder="Họ và Tên"
                 autoComplete="false"
                 className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
                   errors.name
@@ -103,7 +104,7 @@ export default function Contact({ settings }) {
                     : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
                 }`}
                 {...register("name", {
-                  required: "Full name is required",
+                  required: "Cần nhập đầy đủ họ và tên",
                   maxLength: 80
                 })}
               />
@@ -116,12 +117,12 @@ export default function Contact({ settings }) {
 
             <div className="mb-5">
               <label htmlFor="email_address" className="sr-only">
-                Email Address
+                Địa chỉ email
               </label>
               <input
                 id="email_address"
                 type="email"
-                placeholder="Email Address"
+                placeholder="Địa chỉ Email"
                 name="email"
                 autoComplete="false"
                 className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
@@ -130,10 +131,10 @@ export default function Contact({ settings }) {
                     : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
                 }`}
                 {...register("email", {
-                  required: "Enter your email",
+                  required: "Nhập vào email của bạm",
                   pattern: {
                     value: /^\S+@\S+$/i,
-                    message: "Please enter a valid email"
+                    message: "Hãy vui lòng nhập email hợp lệ"
                   }
                 })}
               />
@@ -147,14 +148,14 @@ export default function Contact({ settings }) {
             <div className="mb-3">
               <textarea
                 name="message"
-                placeholder="Your Message"
+                placeholder="Lời Nhắn"
                 className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${
                   errors.message
                     ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
                     : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
                 }`}
                 {...register("message", {
-                  required: "Enter your Message"
+                  required: "Nhập vào lời nhắn của bạn"
                 })}
               />
               {errors.message && (
